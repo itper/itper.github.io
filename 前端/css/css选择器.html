@@ -729,25 +729,34 @@ selector:pseudo-element {property:value;}</code></pre></div>
       content:url(logo.gif);
     }</code></pre></div>
 
-<p>指定content属性
-```css
-h1:after {
+<p>指定content属性</p>
+
+<div><pre><code class="language-css">h1:after {
 width: 100px;
 display: block;
 content:&quot;&quot;;
 background: blue;
 height: 100px;
-/* content: url(/i/w3school<em>logo</em>white.gif); */
+/* content: url(/i/w3school_logo_white.gif); */
 text: 123;
-}</p>
-
-<div><pre><code class="language-none"></code></pre></div></li>
+}
+</code></pre></div></li>
 <li><h4 id="toc_11">选择器分组</h4>
 
 <p>使用,分割选择器</p>
 
 <div><pre><code class="language-css">h2, p {color:gray;}
 </code></pre></div></li>
+<li><h4 id="toc_12">总结</h4>
+
+<p>当所有的选择器中间无空格的时候可以认为是一种元素要符合所有的条件</p>
+
+<div><pre><code class="language-css">p+h1&gt;p[a=&#39;1&#39;].t { }</code></pre></div>
+
+<p>类为t,属性a=&#39;1&#39;,p元素,属于h1,h1是p的兄弟元素.
+.t and [a=&#39;1&#39;] and p and h1&gt; and p+</p>
+
+<p>自右向左读</p></li>
 </ul>
 
 
